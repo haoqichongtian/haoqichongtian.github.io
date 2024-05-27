@@ -152,7 +152,8 @@ const app = Vue.createApp({
 beforeCreate -> created -> beforeMount -> mounted -> beforeUpdate -> updated -> beforeUnmount -> unmounted
 
 ### 新的生命周期
-onBeforeMount -> onMounted -> onBeforeUpdate -> onUpdated -> onBeforeUnmount -> onUnmounted -> onErrorCaptured -> onRenderTracked -> onRenderTriggered
+onBeforeMount -> onMounted -> onBeforeUpdate -> onUpdated -> onBeforeUnmount -> onUnmounted -> onErrorCaptured
+onRenderTracked(收集依赖) -> onRenderTriggered(页面触发渲染)
 
 ### readonly,shallowReadonly的作用和区别
 readonly和shallowReadonly都是用来创建一个只读的响应式数据，但是它们之间有一些区别。
